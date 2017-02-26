@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true">
+
+
+    <TextView
+        android:id="@+id/welcome_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:padding="@dimen/_10sdp"
+        android:text="Welcome suresh!, Here is your notes..."
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/notes_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/welcome_message"
+        android:layout_margin="@dimen/_10sdp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/no_notes_added_yet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="serif"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/no_notes"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_18sdp" />
+
+    <ImageView
+        android:id="@+id/add_notes_button"
+        android:layout_width="@dimen/_60sdp"
+        android:elevation="@dimen/_4sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/_20sdp"
+        android:src="@drawable/add_button" />
+
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:clickable="true"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/phoneNumberLogin"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/edit_text_black_bg"
+        android:fontFamily="monospace"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:paddingLeft="@dimen/_10sdp" />
+
+    <EditText
+        android:id="@+id/passwordLogin"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_below="@+id/phoneNumberLogin"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/edit_text_black_bg"
+        android:fontFamily="monospace"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:maxLength="30"
+        android:paddingLeft="@dimen/_10sdp" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/button_bg_blue"
+        android:elevation="@dimen/_4sdp"
+        android:text="Login"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/not_yet_registered_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Not yet registered?"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_18sdp" />
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/not_yet_registered_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/button_bg_green"
+        android:elevation="@dimen/_4sdp"
+        android:text="Register"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

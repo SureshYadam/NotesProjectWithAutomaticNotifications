@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">NotesProject</string>
+    <string name="no_notes">No Notes Added Yet! Click on add button below to add notes...</string>
+</resources>

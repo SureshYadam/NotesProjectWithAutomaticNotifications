@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:padding="@dimen/_10sdp"
+        android:text="New User Login will delete old user notes. Do you want to continue"
+        android:textColor="@color/red"
+        android:textSize="@dimen/_18sdp" />
+
+    <TextView
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/text"
+        android:layout_margin="@dimen/_10sdp"
+        android:text="Ok"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_toLeftOf="@+id/ok"
+        android:text="Cancel"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
